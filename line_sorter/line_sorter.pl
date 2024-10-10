@@ -10,9 +10,9 @@ use open qw(:std :encoding(utf8));
 
 sub sort_lines_from_file($file) {
     do {
-        say "-" x 50;
+        warn "-" x 50, "\n";
         warn "Can't open $file: $!\n";
-        say "-" x 50;
+        warn "-" x 50, "\n";
 
         return;
     } unless open(my $fh, "<", $file);
