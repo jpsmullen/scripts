@@ -10,7 +10,7 @@ except it works offline and in your terminal.
 Let's say you don't know what to make for dinner. You run the script, enter your
 choices and hit Ctrl+D when finished, and the script decides for you.
 
-```shell
+```
 $ perl decision_maker.pl
 carbonara
 katsu curry
@@ -23,7 +23,7 @@ katsu curry
 You can also pipe the output of other programs into this script (e.g. `cat`),
 but I'm not sure why you'd want to:
 
-```shell
+```
 $ cat ../LICENCE | perl decision_maker.pl
 ==============================
 (if any) on which the executable work runs, or a compiler used to

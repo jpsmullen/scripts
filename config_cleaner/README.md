@@ -21,7 +21,7 @@ options:
 
 Removing files one by one:
 
-```shell
+```
 $ python config_cleaner.py torbrowser akregator
 Found 5 files:
 
@@ -47,7 +47,7 @@ Removed 2 files; kept 3.
 
 Removing all files at once:
 
-```shell
+```
 $ python config_cleaner.py torbrowser -a
 Found 3 files:
 

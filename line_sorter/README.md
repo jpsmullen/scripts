@@ -12,7 +12,7 @@ your lines and press Ctrl+D when you're done.
 This is useful if you, for example, are organising your room and want to sort
 the games or books on your shelf in alphabetical order.
 
-```shell
+```
 $ perl line_sorter.pl
 metal gear solid v: the phantom pain
 batman: arkham knight
@@ -30,7 +30,7 @@ sleeping dogs: definitive edition
 
 Sorting lines from a list of files (note that the case doesn't matter):
 
-```shell
+```
 $ perl line_sorter.pl games.txt movies.txt
 ==================== games.txt ====================
 1. batman: arkham knight
@@ -51,7 +51,7 @@ $ perl line_sorter.pl games.txt movies.txt
 Sorting the output of other programs piped into this script (note the lack of
 blank lines, and that this is a stupid example):
 
-```shell
+```
 $ python -m this | perl line_sorter.pl
 ==================================================
 1. Although never is often better than *right* now.

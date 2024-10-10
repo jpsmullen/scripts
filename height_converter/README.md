@@ -22,7 +22,7 @@ options:
 
 Getting approximate measurements:
 
-```shell
+```
 $ python height_converter.py 183 176.5 160
 183cm is approximately 6'0.047244094488192445"
 176.5cm is approximately 5'9.488188976377955"
@@ -31,7 +31,7 @@ $ python height_converter.py 183 176.5 160
 
 Rounding to the nearest inch (`-r 0` is redundant and gives the same result):
 
-```shell
+```
 $ python height_converter.py 182 185 180 -r
 182cm is roughly 6'0"
 185cm is roughly 6'1"
@@ -40,7 +40,7 @@ $ python height_converter.py 182 185 180 -r
 
 Rounding to three decimal places:
 
-```shell
+```
 $ python height_converter.py 182 185 180 -r 3
 182cm is roughly 5'11.654"
 185cm is roughly 6'0.835"
