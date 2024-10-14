@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Clean up unused config files for uninstalled apps.
+Clean up unused config files for uninstalled apps on Linux.
 """
 
 import argparse
@@ -16,6 +16,7 @@ def clean_up_configs(app_names: list[str], all: bool) -> None:
     Clean up unused config files for uninstalled apps from the
     following directories:
 
+    - ~/ (the home directory)
     - ~/.cache/
     - ~/.config/
     - ~/.local/share/
@@ -28,6 +29,7 @@ def clean_up_configs(app_names: list[str], all: bool) -> None:
     app_names = [app_name.casefold() for app_name in app_names if app_name]
 
     config_directories = (
+        home_directory,
         os.path.join(home_directory, ".config"),
         os.path.join(home_directory, ".cache"),
         os.path.join(home_directory, ".local", "share"),
