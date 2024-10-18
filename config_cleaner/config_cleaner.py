@@ -20,6 +20,7 @@ def clean_up_configs(app_names: list[str], all: bool) -> None:
     - ~/.cache/
     - ~/.config/
     - ~/.local/share/
+    - ~/.var/app/
     """
 
     if (home_directory := os.getenv("HOME")) is None:
@@ -33,6 +34,7 @@ def clean_up_configs(app_names: list[str], all: bool) -> None:
         os.path.join(home_directory, ".config"),
         os.path.join(home_directory, ".cache"),
         os.path.join(home_directory, ".local", "share"),
+        os.path.join(home_directory, ".var", "app"),
     )
 
     found_files = []
@@ -122,7 +124,7 @@ def clean_up_configs(app_names: list[str], all: bool) -> None:
         else:
             print(f"\nRemoved 1 file; kept {kept_count}.")
     else:
-        print("No config files found.")
+        print(f"No config files for {app_names} found.")
 
 
 def main() -> None:

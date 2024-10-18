@@ -1,8 +1,15 @@
 # 🗑️ config cleaner
 
 This script cleans up unused config files for uninstalled apps on Linux. It
-scans the home directory, ~/.config/, ~/.cache/ and ~/.local/share/, and asks
-for permission before removing anything.
+searches the following directories:
+
+- ~/ (the home directory)
+- ~/.cache/
+- ~/.config/
+- ~/.local/share/
+- ~/.var/app/
+
+It asks for permission before deleting anything, so don't worry.
 
 ## 🧑‍💻 usage
 
